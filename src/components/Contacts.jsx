@@ -27,10 +27,7 @@ export default function Contacts() {
           <p>{contacts.Email}</p>
         </motion.a>
 
-        <motion.a
-          whileHover={{ scale: 1.1 }}
-          href={"tel:" + contacts.Phone_info}
-        >
+        <motion.a whileHover={{ scale: 1.1 }} href={"tel:" + contacts.Phone}>
           <img src={phoneLogo} alt="phone" />
           <p>{contacts.Phone}</p>
         </motion.a>
