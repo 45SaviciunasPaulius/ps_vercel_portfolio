@@ -17,7 +17,7 @@ export default function HeroSection() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <img src={Paulius} alt="Paulius" />
+      <img src={Paulius} alt="Paulius" fetchPriority="high" />
       <div>
         <h1 className="heading">{heroSection.name}</h1>
         <p className="heroInfo" style={{ color: "gray" }}>

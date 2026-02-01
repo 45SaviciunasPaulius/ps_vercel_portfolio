@@ -31,7 +31,7 @@ export default function ProjectCard({
         onClick={(e) => e.stopPropagation()}
       >
         GitHub Repo:
-        <img src={githubLogo} />
+        <img src={githubLogo} alt="GitHub" />
       </a>
     </motion.div>
   );

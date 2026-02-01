@@ -82,12 +82,12 @@ export default function Projects() {
           repoLink="https://github.com/45SaviciunasPaulius/Techmart"
           about={projects.project_1.about}
         >
-          <img src={htmlLogo} />
-          <img src={cssLogo} />
-          <img src={jsLogo} />
-          <img src={phpLogo} />
-          <img src={mySqlLogo} />
-          <img src={xamppLogo} />
+          <img src={htmlLogo} alt="HTML" />
+          <img src={cssLogo} alt="CSS" />
+          <img src={jsLogo} alt="JavaScript" />
+          <img src={phpLogo} alt="PHP" />
+          <img src={mySqlLogo} alt="MySQL" />
+          <img src={xamppLogo} alt="XAMPP" />
         </ProjectCard>
 
         <Lightbox
@@ -120,13 +120,13 @@ export default function Projects() {
           repoLink="https://github.com/45SaviciunasPaulius/Renginus"
           about={projects.project_2.about}
         >
-          <img src={htmlLogo} />
-          <img src={cssLogo} />
-          <img src={jsLogo} />
-          <img src={phpLogo} />
-          <img src={mySqlLogo} />
-          <img src={xamppLogo} />
-          <img src={bootstrapLogo} />
+          <img src={htmlLogo} alt="HTML" />
+          <img src={cssLogo} alt="CSS" />
+          <img src={jsLogo} alt="JavaScript" />
+          <img src={phpLogo} alt="PHP" />
+          <img src={mySqlLogo} alt="MySQL" />
+          <img src={xamppLogo} alt="XAMPP" />
+          <img src={bootstrapLogo} alt="Bootstrap" />
         </ProjectCard>
 
         <Lightbox
@@ -159,9 +159,9 @@ export default function Projects() {
           repoLink="https://github.com/45SaviciunasPaulius/Dokubox"
           about={projects.project_3.about}
         >
-          <img src={reactLogo} />
-          <img src={appwriteLogo} />
-          <img src={jsLogo} />
+          <img src={reactLogo} alt="React" />
+          <img src={appwriteLogo} alt="Appwrite" />
+          <img src={jsLogo} alt="JavaScript" />
         </ProjectCard>
 
         <Lightbox
