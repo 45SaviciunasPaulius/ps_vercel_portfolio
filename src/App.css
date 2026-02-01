@@ -494,8 +494,12 @@ nav img {
     align-items: center;
     justify-content: center;
     margin: 1em;
-    width: 185px;
-    height: 185px;
+    width: 140px;
+    height: 140px;
+}
+
+.Contacts p {
+    font-size: small
 }
 
 .Footer {
