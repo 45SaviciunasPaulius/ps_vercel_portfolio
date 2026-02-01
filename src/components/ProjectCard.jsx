@@ -21,7 +21,7 @@ export default function ProjectCard({
     >
       <h1>{title}</h1>
       <p className="date">{date}</p>
-      <img className="firstPhoto" src={firstPhoto} alt="project photo" loading="lazy" />
+      <img className="firstPhoto" src={firstPhoto} alt="project photo" />
       <p className="aboutProject">{about}</p>
       <div className="projectStack">{children}</div>
       <a
