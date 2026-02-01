@@ -1,0 +1,172 @@
+{
+    "LT": {
+        "menu": {
+            "home": "Pradžia",
+            "aboutMe": "Apie mane",
+            "projects": "Projektai",
+            "cv": "CV",
+            "contacts": "Kontaktai"
+        },
+        "heroSection": {
+            "name": "Sveiki! Aš esu Paulius Savičiūnas",
+            "info": "Paskutinio kurso IT studentas | Vilnius, Lietuva",
+            "bio": "Kuriu asmeninius ir akademinius Full-Stack projektus. Bei siekiu tikros praktikos interneto svetainių kurime."
+        },
+        "aboutMe": {
+            "heading": "Technologijų stack'as",
+            "info_1": "Pasižymių stipriu noru tobulėti ir mokytis",
+            "info_2": "Atsakingas požiūris į paskirtą darbą",
+            "info_3": "Gebėjimas savarankiškai išspręsti iškilusias problemas"
+        },
+        "projects": {
+            "heading": "Projektai",
+            "project_1": {
+                "title": "Kompiuterių komponentų skelbimų tinklapis „TechMart“",
+                "date": "2024.10 - 2025.01",
+                "about": "Projektas skirtas palengvinti naudotų, bei naujų kompiuterinių dalių prekybą. Ši svetainė leidžia individualiems asmenims, bei masiniams gamintojams talpinti skelbimus. Projektas užtikrina lengvą ir paprastą komunikavimą tarp pirkėjo ir pardavėjo, nesudetingą prekių paiešką."
+            },
+            "project_2": {
+                "title": " „Renginus“ - sistema įmonėms organizuoti ir valdyti renginius jos viduje",
+                "date": "2025.01 - 2025.05",
+                "about": " „Renginus“ – tai platforma, kuri leidžia įmonėms organizuoti ir valdyti įvairius renginius. Šis sprendimas unikalus tuo, jog jis yra skirtas konkrečiai įmonei ir naudojamas jos viduje. Taigi, naudodamos „Renginus“ įmonės galės atsisakyti įvairių kitų platformų, kurias naudojo anksčiau, ir turės vieną, paprastą ir unikalų sprendimą skirtą tik joms. Taip pat, šis sprendimas ne tik turėtų supaprastinti įmonės renginių organizavimą bei valdymą, bet ir skatinti planuoti renginius dažniau. "
+            },
+            "project_3": {
+                "title": "Mobilioji programa Dokubox",
+                "date": "2025.10 - 2026.01",
+                "about": "Dokubox - tai mobilioji dokumentų valdymo aplikacija, skirta pirkimo dokumentų ir kvitų saugojimui, organizavimui bei patogiam valdymui vienoje vietoje."
+            },
+            "project_4": {
+                "title": "Netrukus...",
+                "date": "2026.02 - 2026.06",
+                "about": "..."
+            }
+        },
+        "otherInfo": {
+            "type_1": "Išsilavinimas",
+            "type_2": "Patirtis",
+            "Education": {
+                "HighSchool": {
+                    "name": "Kuršėnų Lauryno Ivinskio gimnazija",
+                    "year": "2017.09 - 2021.07",
+                    "degree": "Vidurinis",
+                    "desc": ""
+                },
+                "College": {
+                    "name": "Vilniaus Verslo Kolegija",
+                    "year": "2023.09 - 2026.07",
+                    "degree": "Programavimas ir IT | Aukštasis",
+                    "desc": ""
+                }
+            },
+            "Exp": {
+                "Job1": {
+                    "name": "Lietuvos kariuomenė",
+                    "year": "2022.04-2022.12",
+                    "degree": "Privalomoji pradinė karo tarnyba"
+                },
+                "Job2": {
+                    "name": "UAB Bitė",
+                    "year": "2023.01-2023.08",
+                    "degree": "Klientų aptarnavimo vadybininkas"
+                },
+                "Job3": {
+                    "name": "UAB Enzas",
+                    "year": "2024.02 - Dabar",
+                    "degree": "Tinklapių Administratorius / Pardavimų vadybininkas"
+                }
+            }
+        },
+        "Contacts": {
+            "Heading": "Susisiekime!",
+            "Email_info": "El. paštas:",
+            "Email": "psaviciunas@gmail.com",
+            "Phone_info": "Tel.:",
+            "Phone": "+37061366928"
+        }
+    },
+    "EN": {
+        "menu": {
+            "home": "Home",
+            "aboutMe": "About me",
+            "projects": "Projects",
+            "cv": "CV",
+            "contacts": "Contacts"
+        },
+        "heroSection": {
+            "name": "Hello! I'm Paulius Savičiūnas",
+            "info": "Final year IT student | Vilnius, Lithuania",
+            "bio": "I develop personal and academic Full-Stack projects. And I'm looking for real practice in website development."
+        },
+        "aboutMe": {
+            "heading": "Development stack",
+            "info_1": "Strong desire for self-improvement",
+            "info_2": "Responsible approach to assigned tasks",
+            "info_3": "Ability to independently solve emerging problems"
+        },
+        "projects": {
+            "heading": "Projects",
+            "project_1": {
+                "title": "Computer Components Classifieds Website \"TechMart\"",
+                "date": "2024.10 - 2025.01",
+                "about": "The project is designed to facilitate the trade of used and new computer parts. This website allows individuals and mass manufacturers to post ads. The project ensures easy and simple communication between buyer and seller, as well as uncomplicated product search."
+            },
+            "project_2": {
+                "title": "\"Renginus\" - a system for companies to organize and manage internal events",
+                "date": "2025.01 - 2025.05",
+                "about": "\"Renginus\" is a platform that allows companies to organize and manage various events. This solution is unique because it is designed for a specific company and used internally. Thus, using \"Renginus\", companies can abandon various other platforms they used before and have one simple and unique solution tailored just for them. Additionally, this solution should not only simplify the company's event organization and management but also encourage planning events more frequently."
+            },
+            "project_3": {
+                "title": "Mobile Application Dokubox",
+                "date": "2025.10 - 2026.01",
+                "about": "Dokubox is a mobile document management application designed for storing, organizing, and conveniently managing purchase documents and receipts in one place."
+            },
+            "project_4": {
+                "title": "Coming soon...",
+                "date": "2026.02 - 2026.06",
+                "about": "..."
+            }
+        },
+        "otherInfo": {
+            "type_1": "Education",
+            "type_2": "Experience",
+            "Education": {
+                "HighSchool": {
+                    "name": "Kuršėnai Laurynas Ivinskis Gymnasium",
+                    "year": "2017.09 - 2021.07",
+                    "degree": "Secondary",
+                    "desc": ""
+                },
+                "College": {
+                    "name": "Vilnius Business College",
+                    "year": "2023.09 - 2026.07",
+                    "degree": "Programming and IT | Higher Education",
+                    "desc": ""
+                }
+            },
+            "Exp": {
+                "Job1": {
+                    "name": "Lithuanian Armed Forces",
+                    "year": "2022.04 - 2022.12",
+                    "degree": "Mandatory initial military service"
+                },
+                "Job2": {
+                    "name": "UAB Bitė",
+                    "year": "2023.01 - 2023.08",
+                    "degree": "Customer Service Manager"
+                },
+                "Job3": {
+                    "name": "UAB Enzas",
+                    "year": "2024 .02 - Present",
+                    "degree": "Website Administrator / Sales Manager"
+                }
+            }
+        },
+        "Contacts": {
+            "Heading": "Let's get in touch!",
+            "Email_info": "Email:",
+            "Email": "psaviciunas@gmail.com",
+            "Phone_info": "Phone:",
+            "Phone": "+37061366928"
+        }
+    }
+}
