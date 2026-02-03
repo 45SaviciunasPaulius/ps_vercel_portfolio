@@ -1,7 +1,7 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import localization from "../localization.json";
 import { langContext } from "../App";
-import { motion } from "motion/react";
+import { AnimatePresence, motion } from "motion/react";
 
 import CloseIcon from "../assets/icons/close.png";
 import MenuIcon from "../assets/icons/menu.png";
@@ -10,18 +10,7 @@ export default function NavBar({ children }) {
   const language = useContext(langContext);
   const menu = localization[language.lang].menu ?? localization.LT.menu;
 
-  function openSideBar() {
-    const sidebar = document.querySelector(".sidebar");
-
-    sidebar.style.display = "flex";
-  }
-
-  function closeSideBar(e) {
-    e.preventDefault();
-    const sidebar = document.querySelector(".sidebar");
-
-    sidebar.style.display = "none";
-  }
+  const [open, setOpen] = useState(false);
 
   function ScrollToContacts() {
     document.getElementById("Contacts").scrollIntoView({ behavior: "smooth" });
@@ -37,23 +26,41 @@ export default function NavBar({ children }) {
 
   return (
     <nav>
-      <ul className="sidebar">
-        <li>
-          <button onClick={closeSideBar}>
-            <img src={CloseIcon} alt="menu" />
-          </button>
-        </li>
-        <li>
-          <MotionLink onClick={ScrollToTop}>{menu.aboutMe}</MotionLink>
-        </li>
-        <li>
-          <MotionLink onClick={ScrollToProjects}>{menu.projects}</MotionLink>
-        </li>
-        <li>
-          <MotionLink onClick={ScrollToContacts}>{menu.contacts}</MotionLink>
-        </li>
-        <li>{children}</li>
-      </ul>
+      <AnimatePresence>
+        {open && (
+          <motion.ul
+            className="sidebar"
+            initial={{ x: 250, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: 250, opacity: 0 }}
+            transition={{ duration: 0.2, ease: "easeOut" }}
+          >
+            <li>
+              <button
+                onClick={() => {
+                  setOpen(false);
+                }}
+              >
+                <img src={CloseIcon} alt="menu" />
+              </button>
+            </li>
+            <li>
+              <MotionLink onClick={ScrollToTop}>{menu.aboutMe}</MotionLink>
+            </li>
+            <li>
+              <MotionLink onClick={ScrollToProjects}>
+                {menu.projects}
+              </MotionLink>
+            </li>
+            <li>
+              <MotionLink onClick={ScrollToContacts}>
+                {menu.contacts}
+              </MotionLink>
+            </li>
+            <li>{children}</li>
+          </motion.ul>
+        )}
+      </AnimatePresence>
 
       <ul>
         <li>
@@ -70,7 +77,7 @@ export default function NavBar({ children }) {
         </li>
         <li className="hideOnMobile">{children}</li>
         <li className="showOnMobile hideOnDesktop">
-          <button onClick={openSideBar}>
+          <button onClick={() => setOpen(true)}>
             <img src={MenuIcon} alt="menu" />
           </button>
         </li>

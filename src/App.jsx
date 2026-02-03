@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import HeroSection from "./components/HeroSection";
@@ -13,21 +13,27 @@ import unitedKingdomFlag from "./assets/flags/UK.webp";
 export const langContext = createContext();
 
 export default function App() {
-  const [lang, setLang] = useState("LT");
+  const [lang, setLang] = useState(localStorage.getItem("lang") || "LT");
+
+  useEffect(() => {
+    localStorage.setItem("lang", lang);
+  }, [lang]);
 
   function changeLang() {
-    if (lang === "LT") setLang("EN");
-    else setLang("LT");
+    if (lang === "LT") {
+      setLang("EN");
+    } else {
+      setLang("LT");
+    }
   }
   return (
     <langContext.Provider value={{ lang, setLang }}>
       <NavBar>
         <button className="langButton" onClick={changeLang}>
-          {lang === "LT" ? (
-            <img src={lithuanianFlag} alt="Lithuanian" />
-          ) : (
-            <img src={unitedKingdomFlag} alt="English" />
-          )}
+          <img
+            src={lang === "LT" ? lithuanianFlag : unitedKingdomFlag}
+            alt="Language Button"
+          />
         </button>
       </NavBar>
 
