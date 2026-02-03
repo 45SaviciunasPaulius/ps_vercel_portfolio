@@ -113,8 +113,21 @@ nav img {
     }
 
     .projectCard {
-        min-width: 95% !important;
+        flex-direction: column;
+        height: fit-content !important;
     }
+
+    .firstPhoto {
+        width: 100%;
+        height: auto !important;
+        aspect-ratio: initial !important;
+    }
+
+    .projectCard h1,
+    .date {
+        text-align: center;
+    }
+
 
 
 }
@@ -282,85 +295,83 @@ nav img {
 }
 
 .projectsContainer {
-    gap: 1em;
+
+    gap: 2em;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin: auto;
+    margin-top: 50px;
     margin-bottom: 200px;
 }
 
 .projectCard {
+    max-width: 1500px;
+    margin: auto;
+    height: 350px;
+    width: 70%;
+    display: flex;
     cursor: pointer;
     z-index: 900;
     box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.055);
     background-color: #1c191740;
-    width: 40%;
-    max-width: 700px;
-    min-width: 500px;
-    height: 40em;
-    border-radius: 20px;
-    margin: 50px auto;
+}
 
-    height: fit-content;
-    padding: 10px;
+.projectCard .firstPhoto {
+    aspect-ratio: 1;
+    object-fit: cover;
+    height: 100%;
+}
+
+.ProjectInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.aboutProject {
+    margin: 10px;
 }
 
 
 .projectStack {
+    width: 100%;
     min-height: 80px;
-    margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .projectStack img {
-
-    width: 3em;
+    width: 2.5em;
     object-fit: scale-down;
     margin: 0.5em;
+}
+
+.repoLink {
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    z-index: 999;
+    justify-self: flex-end;
+}
+
+.repoLink img {
+    width: 4em;
 }
 
 .projectCard h1 {
 
     color: #fbbf24;
-    text-align: center;
+    margin-left: 10px;
     margin-top: 10px;
 }
 
 .projectCard .date {
     color: gray;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.projectCard .firstPhoto {
-    max-height: 300px;
-    object-fit: cover;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.aboutProject {
-    margin: 10px;
-    min-height: 200px;
-}
-
-.repoLink {
-    margin-top: 20px;
-    width: 80px;
-    cursor: pointer;
-    padding-left: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-}
-
-.repoLink img {
-    width: inherit;
-
+    margin-left: 10px;
 }
 
 .OtherInfo {
@@ -424,6 +435,10 @@ nav img {
     .OtherInfo_2 li,
     .OtherInfo li {
         text-align: center;
+    }
+
+    .projectCard {
+        width: 95% !important;
     }
 }
 

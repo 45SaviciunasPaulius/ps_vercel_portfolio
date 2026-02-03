@@ -19,20 +19,22 @@ export default function ProjectCard({
       transition={{ duration: 0.2, ease: "easeIn" }}
       whileHover={{ scale: 1.05 }}
     >
-      <h1>{title}</h1>
-      <p className="date">{date}</p>
       <img className="firstPhoto" src={firstPhoto} alt="project photo" />
-      <p className="aboutProject">{about}</p>
-      <div className="projectStack">{children}</div>
-      <a
-        target="_blank"
-        className="repoLink"
-        href={repoLink}
-        onClick={(e) => e.stopPropagation()}
-      >
-        GitHub Repo:
-        <img src={githubLogo} alt="GitHub" />
-      </a>
+      <div className="ProjectInfo">
+        <h1>{title}</h1>
+        <p className="date">{date}</p>
+        <p className="aboutProject">{about}</p>
+        <div className="projectStack">{children}</div>
+        <a
+          target="_blank"
+          className="repoLink"
+          href={repoLink}
+          onClick={(e) => e.stopPropagation()}
+        >
+          GitHub Repo:
+          <img src={githubLogo} alt="GitHub" />
+        </a>
+      </div>
     </motion.div>
   );
 }
