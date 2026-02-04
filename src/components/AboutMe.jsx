@@ -63,15 +63,15 @@ export default function AboutMe() {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1, ease: "easeIn" }}
       >
-        <ul className="flex justify-center flex-wrap gap-10">
+        <ul className="grid grid-cols-2 sm:grid-cols-4 gap-5">
           {stack.map((item) => (
             <motion.li
               key={item}
-              className="flex flex-col-reverse items-center gap-3"
+              className="flex flex-col-reverse items-center gap-2"
               whileHover={{ y: 10 }}
             >
               {item[0]}
-              <img className="w-20" src={item[1]} alt={item[0]} />
+              <img className="max-w-20" src={item[1]} alt={item[0]} />
             </motion.li>
           ))}
         </ul>
