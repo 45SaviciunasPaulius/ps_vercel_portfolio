@@ -59,11 +59,12 @@ export default function AboutMe() {
       <h1 className="heading">{aboutMe.heading}</h1>
 
       <motion.div
+        className="mt-10 m-auto"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1, ease: "easeIn" }}
       >
-        <ul className="grid grid-cols-2 sm:grid-cols-4 gap-5">
+        <ul className="grid grid-cols-2 sm:grid-cols-4 gap-10 sm:gap-25">
           {stack.map((item) => (
             <motion.li
               key={item}
