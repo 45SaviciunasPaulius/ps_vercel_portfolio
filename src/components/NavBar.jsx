@@ -25,58 +25,69 @@ export default function NavBar({ children }) {
   }
 
   return (
-    <nav>
+    <nav className="z-1000 bg-secondary fixed top-0 w-full">
       <AnimatePresence>
         {open && (
           <motion.ul
-            className="sidebar"
+            className="flex flex-col w-62.5 fixed bg-secondary top-0 right-0 h-full justify-start"
             initial={{ x: 250, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: 250, opacity: 0 }}
             transition={{ duration: 0.2, ease: "easeOut" }}
           >
-            <li>
+            <li className="w-full h-15">
               <button
+                className="w-full h-15"
                 onClick={() => {
                   setOpen(false);
                 }}
               >
-                <img src={CloseIcon} alt="menu" />
+                <img className="w-13 px-3" src={CloseIcon} alt="menu" />
               </button>
             </li>
-            <li>
-              <MotionLink onClick={ScrollToTop}>{menu.aboutMe}</MotionLink>
+            <li className="w-full h-15">
+              <MotionLink className="w-full h-15" onClick={ScrollToTop}>
+                {menu.aboutMe}
+              </MotionLink>
             </li>
-            <li>
-              <MotionLink onClick={ScrollToProjects}>
+            <li className="w-full h-15">
+              <MotionLink className="w-full h-15" onClick={ScrollToProjects}>
                 {menu.projects}
               </MotionLink>
             </li>
-            <li>
-              <MotionLink onClick={ScrollToContacts}>
+            <li className="w-full h-15">
+              <MotionLink className="w-full h-15" onClick={ScrollToContacts}>
                 {menu.contacts}
               </MotionLink>
             </li>
-            <li>{children}</li>
+            <li className="mt-4 self-center">{children}</li>
           </motion.ul>
         )}
       </AnimatePresence>
 
-      <ul>
-        <li>
-          <button onClick={ScrollToTop}>Paulius Savičiūnas</button>
+      <ul className="flex flex-row h-16 justify-end gap-5 items-center mx-4">
+        <li className="mr-auto px-3">
+          <button className="w-full h-15" onClick={ScrollToTop}>
+            Paulius Savičiūnas
+          </button>
         </li>
-        <li className="hideOnMobile">
-          <MotionLink onClick={ScrollToTop}>{menu.aboutMe}</MotionLink>
+        <li className="hidden lg:block hover:bg-primary px-3 h-full">
+          <MotionLink className="w-full h-15" onClick={ScrollToTop}>
+            {menu.aboutMe}
+          </MotionLink>
         </li>
-        <li className="hideOnMobile">
-          <MotionLink onClick={ScrollToProjects}>{menu.projects}</MotionLink>
+        <li className="hidden lg:block hover:bg-primary px-3 h-full">
+          <MotionLink className="w-full h-15" onClick={ScrollToProjects}>
+            {menu.projects}
+          </MotionLink>
         </li>
-        <li className="hideOnMobile">
-          <MotionLink onClick={ScrollToContacts}>{menu.contacts}</MotionLink>
+        <li className="hidden lg:block hover:bg-primary px-3 h-full">
+          <MotionLink className="w-full h-15" onClick={ScrollToContacts}>
+            {menu.contacts}
+          </MotionLink>
         </li>
-        <li className="hideOnMobile">{children}</li>
-        <li className="showOnMobile hideOnDesktop">
+        <li className="hidden lg:block">{children}</li>
+        <li className="block lg:hidden">
           <button onClick={() => setOpen(true)}>
             <img src={MenuIcon} alt="menu" />
           </button>
