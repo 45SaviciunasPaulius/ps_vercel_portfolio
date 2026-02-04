@@ -88,7 +88,7 @@ export default function NavBar({ children }) {
 
 const MotionLink = ({ children, ...props }) => (
   <motion.button
-    whileHover={{ backgroundColor: "rgba(242, 255, 0, 0.15)" }}
+    whileHover={{ backgroundColor: "rgba(12, 10, 9,0.5)" }}
     transition={{ duration: 0.2, ease: "easeIn" }}
     {...props}
   >

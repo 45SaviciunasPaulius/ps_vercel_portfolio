@@ -15,6 +15,17 @@ import reactLogo from "../assets/stack/react.png";
 import xamppLogo from "../assets/stack/xampp.png";
 import bootstrapLogo from "../assets/stack/bootstrap.png";
 
+const stack = [
+  ["HTML", htmlLogo],
+  ["CSS", cssLogo],
+  ["JavaScript", jsLogo],
+  ["MySQL", mySqlLogo],
+  ["PHP", phpLogo],
+  ["React", reactLogo],
+  ["XAMPP", xamppLogo],
+  ["Bootstrap", bootstrapLogo],
+];
+
 import selfImprovement from "../assets/icons/self_improvement.png";
 import handshake from "../assets/icons/handshake.png";
 import lightbulb from "../assets/icons/lightbulb.png";
@@ -48,63 +59,21 @@ export default function AboutMe() {
       <h1 className="heading">{aboutMe.heading}</h1>
 
       <motion.div
-        className="carousel"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1, ease: "easeIn" }}
       >
-        <ul className="stack">
-          <li>
-            <img src={htmlLogo} alt="html" />
-          </li>
-          <li>
-            <img src={cssLogo} alt="css" />
-          </li>
-          <li>
-            <img src={jsLogo} alt="js" />
-          </li>
-          <li>
-            <img src={phpLogo} alt="php" />
-          </li>
-          <li>
-            <img src={mySqlLogo} alt="mysql" />
-          </li>
-          <li>
-            <img src={reactLogo} alt="react" />
-          </li>
-          <li>
-            <img src={xamppLogo} alt="xampp" />
-          </li>
-          <li>
-            <img src={bootstrapLogo} alt="bootstrap" />
-          </li>
-        </ul>
-
-        <ul aria-hidden className="stack">
-          <li>
-            <img src={htmlLogo} alt="html" />
-          </li>
-          <li>
-            <img src={cssLogo} alt="css" />
-          </li>
-          <li>
-            <img src={jsLogo} alt="js" />
-          </li>
-          <li>
-            <img src={phpLogo} alt="php" />
-          </li>
-          <li>
-            <img src={mySqlLogo} alt="mysql" />
-          </li>
-          <li>
-            <img src={reactLogo} alt="react" />
-          </li>
-          <li>
-            <img src={xamppLogo} alt="xampp" />
-          </li>
-          <li>
-            <img src={bootstrapLogo} alt="bootstrap" />
-          </li>
+        <ul className="flex justify-center flex-wrap gap-10">
+          {stack.map((item) => (
+            <motion.li
+              key={item}
+              className="flex flex-col-reverse items-center gap-3"
+              whileHover={{ y: 10 }}
+            >
+              {item[0]}
+              <img className="w-20" src={item[1]} alt={item[0]} />
+            </motion.li>
+          ))}
         </ul>
       </motion.div>
 

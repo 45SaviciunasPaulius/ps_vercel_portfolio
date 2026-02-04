@@ -1,3 +1,9 @@
+@import "tailwindcss";
+
+h1 {
+    font-weight: 500;
+}
+
 * {
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -90,20 +96,6 @@ nav img {
     .HeroSection p,
     .heading {
         margin: 10px 15px !important;
-    }
-
-    .carousel,
-    .stack {
-        margin: 0 !important;
-    }
-
-    .stack li {
-        padding: 14px;
-        margin: 0 !important;
-    }
-
-    .stack img {
-        width: 4em !important;
     }
 
     .cards {
@@ -200,47 +192,6 @@ nav img {
     margin: auto;
 }
 
-.carousel {
-    width: 100%;
-    display: flex;
-    margin: 50px auto;
-    overflow-x: auto;
-
-}
-
-.carousel::-webkit-scrollbar {
-    display: none;
-}
-
-.stack {
-    touch-action: none;
-    display: flex;
-    list-style: none;
-    animation: spin 20s infinite linear;
-
-}
-
-.stack li {
-    flex: 0 0 5em;
-    margin: 15px;
-    padding-right: 1em;
-}
-
-
-.stack img {
-    padding: 10px;
-    width: 6em;
-}
-
-@keyframes spin {
-    from {
-        translate: 0;
-    }
-
-    to {
-        translate: -100%;
-    }
-}
 
 .card {
     box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.055);
