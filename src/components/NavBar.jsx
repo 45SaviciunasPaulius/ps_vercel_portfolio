@@ -89,7 +89,7 @@ export default function NavBar({ children }) {
         <li className="hidden lg:block">{children}</li>
         <li className="block lg:hidden">
           <button onClick={() => setOpen(true)}>
-            <img src={MenuIcon} alt="menu" />
+            <img className="w-8" src={MenuIcon} alt="menu" />
           </button>
         </li>
       </ul>

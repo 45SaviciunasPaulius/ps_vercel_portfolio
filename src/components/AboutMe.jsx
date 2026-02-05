@@ -40,12 +40,12 @@ export default function AboutMe() {
 
   return (
     <motion.div
-      className="aboutMe"
+      className="flex flex-col text-center  m-auto"
       initial={{ opacity: 0, y: -40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <div className="cards">
+      <div className="flex flex-wrap gap-5 justify-center items-center mb-35 ">
         <Card
           icon={selfImprovement}
           heading={aboutMe.info_1}
@@ -56,7 +56,7 @@ export default function AboutMe() {
 
         <Card icon={lightbulb} heading={aboutMe.info_3} info={aboutMe.info_3} />
       </div>
-      <h1 className="heading">{aboutMe.heading}</h1>
+      <h1 className="text-heading font-bold text-xl">{aboutMe.heading}</h1>
 
       <motion.div
         className="mt-10 m-auto"
@@ -78,10 +78,12 @@ export default function AboutMe() {
         </ul>
       </motion.div>
 
-      <div className="OtherInfoAll">
-        <div className="OtherInfo">
-          <h1>{otherInfo.type_1}</h1>
-          <ul>
+      <div className="w-full max-w-300 m-auto my-30">
+        <div className="w-full flex flex-col md:flex-row items-center md:items-stretch">
+          <h1 className="text-heading md:border-r px-7 md:flex items-center mb-3 md:mb-0 border-b md:border-b-0 w-[70%] m-auto pb-5 md:w-fit md:m-0">
+            {otherInfo.type_1}
+          </h1>
+          <ul className="list-none md:relative left-15 flex flex-col md:text-left gap-12 w-full">
             <OtherInfo
               name={otherInfo.Education.HighSchool.name}
               title={otherInfo.Education.HighSchool.degree}
@@ -95,8 +97,8 @@ export default function AboutMe() {
           </ul>
         </div>
 
-        <div className="OtherInfo_2">
-          <ul>
+        <div className="w-full flex flex-col-reverse md:flex-row md:items-stretch mt-30">
+          <ul className="list-none md:relative right-15 flex flex-col md:text-right gap-12 w-full">
             <OtherInfo
               name={otherInfo.Exp.Job1.name}
               title={otherInfo.Exp.Job1.degree}
@@ -113,7 +115,9 @@ export default function AboutMe() {
               year={otherInfo.Exp.Job3.year}
             />
           </ul>
-          <h1>{otherInfo.type_2}</h1>
+          <h1 className="text-heading md:border-l px-7 md:flex items-center mb-3 md:mb-0 border-b md:border-b-0 w-[70%] m-auto pb-5 md:w-fit md:m-0">
+            {otherInfo.type_2}
+          </h1>
         </div>
       </div>
     </motion.div>

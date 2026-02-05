@@ -24,13 +24,6 @@ body {
 }
 
 @media (max-width: 1000px) {
-  
-  
-  .cards {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 
   .projectCard {
     flex-direction: column;
@@ -49,64 +42,6 @@ body {
   }
 }
 
-.aboutMe {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 60%;
-  margin: auto;
-}
-
-.card {
-  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.055);
-  background-color: #1c191740;
-  width: 16em;
-  height: 10em;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.card img {
-  margin: 6px;
-  display: flex;
-  width: 3em;
-}
-
-.card h1 {
-  color: #fbbf24;
-  width: 80%;
-  text-align: left;
-  padding: 0 15px;
-  margin-top: 10px;
-}
-
-.circle1,
-.circle2 {
-  background-color: #543c3035;
-  width: 8em;
-  height: 8em;
-  border-radius: 50%;
-  margin-left: auto;
-  position: relative;
-}
-
-.circle1 {
-  top: -110px;
-  left: 100px;
-}
-
-.circle2 {
-  top: -200px;
-  left: 20px;
-}
-
-.cards {
-  display: flex;
-  gap: 3em;
-  justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 150px;
-}
 
 .projectsContainer {
   gap: 2em;
@@ -185,102 +120,15 @@ body {
   margin-left: 10px;
 }
 
-.OtherInfo {
-  width: 100%;
-  margin: 200px 0;
-  display: flex;
-}
-
-.OtherInfo h1 {
-  color: #fbbf24;
-  border-right: solid #fbbf24 1px;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-}
-
-.OtherInfo ul {
-  list-style: none;
-  position: relative;
-  left: 70px;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  width: 100%;
-}
 
 .grayOut {
   color: gray;
 }
 
 @media (max-width: 600px) {
-  .OtherInfo_2 {
-    flex-direction: column-reverse;
-  }
-
-  .OtherInfo {
-    flex-direction: column;
-  }
-
-  .OtherInfo h1,
-  .OtherInfo_2 h1 {
-    border-right: none !important;
-    border-left: none !important;
-    border-bottom: solid #fbbf24 1px;
-    padding: 30px 0 !important;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-
-  .OtherInfo_2 ul,
-  .OtherInfo ul {
-    position: static !important;
-    top: auto;
-    left: auto;
-    right: auto;
-    bottom: auto;
-  }
-
-  .OtherInfo_2 li,
-  .OtherInfo li {
-    text-align: center;
-  }
-
   .projectCard {
     width: 95% !important;
   }
-}
-
-.OtherInfo_2 {
-  width: 100%;
-  margin: 200px 0;
-  display: flex;
-}
-
-.OtherInfo_2 h1 {
-  color: #fbbf24;
-  border-left: solid #fbbf24 1px;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-}
-
-.OtherInfo_2 ul {
-  list-style: none;
-  position: relative;
-  left: -70px;
-  text-align: right;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  width: 100%;
-}
-
-.OtherInfoAll {
-  width: 100%;
-  max-width: 1300px;
-  margin: auto;
 }
 
 .ContactContainer {
