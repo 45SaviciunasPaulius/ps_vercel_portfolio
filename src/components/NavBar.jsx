@@ -65,7 +65,7 @@ export default function NavBar({ children }) {
         )}
       </AnimatePresence>
 
-      <ul className="flex flex-row h-16 justify-end items-center mx-4 backdrop-blur-sm">
+      <ul className="flex flex-row h-16 justify-end items-center backdrop-blur-sm">
         <li className="mr-auto px-3 ">
           <button className="w-full h-15 cursor-pointer" onClick={ScrollToTop}>
             Paulius Savičiūnas
@@ -95,7 +95,7 @@ export default function NavBar({ children }) {
             {menu.contacts}
           </MotionLink>
         </li>
-        <li className="hidden lg:block ml-2">{children}</li>
+        <li className="hidden lg:block mx-2">{children}</li>
         <li className="block lg:hidden ">
           <button onClick={() => setOpen(true)}>
             <img className="w-8" src={MenuIcon} alt="menu" />
