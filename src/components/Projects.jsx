@@ -71,7 +71,7 @@ export default function Projects() {
   const [openThird, setOpenThird] = useState(false);
 
   return (
-    <div className="flex flex-col items-center my-30">
+    <div className="flex flex-col items-center my-30" id="Projects">
       <h1 className="mx-5 text-heading font-bold text-xl mb-7">
         {projects.heading}
       </h1>
