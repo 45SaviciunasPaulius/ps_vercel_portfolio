@@ -14,7 +14,7 @@ export default function Contacts() {
 
   return (
     <motion.div
-      className="bg-secondary grid grid-row-2 grid-col-1 justify-center text-center"
+      className="bg-secondary/35 grid grid-row-2 grid-col-1 justify-center text-center"
       id="Contacts"
       initial={{ y: 50, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}

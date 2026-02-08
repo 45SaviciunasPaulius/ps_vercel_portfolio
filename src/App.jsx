@@ -29,7 +29,7 @@ export default function App() {
   return (
     <langContext.Provider value={{ lang, setLang }}>
       <NavBar>
-        <button className="w-8 flex" onClick={changeLang}>
+        <button className="w-8 flex cursor-pointer" onClick={changeLang}>
           <img
             src={lang === "LT" ? lithuanianFlag : unitedKingdomFlag}
             alt="Language Button"

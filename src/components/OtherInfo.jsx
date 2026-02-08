@@ -11,8 +11,8 @@ export default function OtherInfo({ name, title, year, desc }) {
   return (
     <motion.li initial={{ x: -40 }} whileInView={{ x: 0 }}>
       <h2>{name}</h2>
-      <p className="text-neutral-500">{title}</p>
-      <p className="text-neutral-500">{year}</p>
+      <p className="text-subtitle">{title}</p>
+      <p className="text-subtitle">{year}</p>
       <p>{desc}</p>
     </motion.li>
   );

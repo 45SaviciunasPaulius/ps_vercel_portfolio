@@ -18,7 +18,7 @@ export default function HeroSection() {
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <img
-        className="w-full lg:w-[50%] max-w-125"
+        className="w-full lg:w-[50%] max-w-125 rounded shadow-lg shadow-black"
         src={Paulius}
         alt="Paulius"
         fetchPriority="high"
@@ -27,7 +27,7 @@ export default function HeroSection() {
         <h1 className="mx-5 text-heading font-medium text-3xl mt-3 lg:text-left lg:mx-20">
           {heroSection.name}
         </h1>
-        <p className="mx-5 text-neutral-400 mt-2 lg:max-w-110 text-justify lg:mx-20">
+        <p className="mx-5 text-subtitle mt-2 lg:max-w-110 text-justify lg:mx-20">
           {heroSection.info}
         </p>
         <p className="mx-5 mt-8 max-w-110 text-justify lg:text-pretty lg:mx-20 text-md">

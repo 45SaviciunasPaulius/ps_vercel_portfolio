@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 export default function Card({ icon, heading, info, s }) {
   return (
     <motion.div
-      className="shadow-md shadow-neutral-800/35 bg-[#1c191740] w-70 h-43 overflow-hidden rounded-3xl"
+      className="shadow-lg/20 shadow- shadow-black bg-[#1c191740] w-70 h-43 overflow-hidden rounded-3xl"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       whileHover={{ y: -10 }}

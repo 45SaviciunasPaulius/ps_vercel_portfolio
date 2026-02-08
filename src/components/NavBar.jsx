@@ -25,11 +25,11 @@ export default function NavBar({ children }) {
   }
 
   return (
-    <nav className="z-1000 bg-secondary fixed top-0 w-full">
+    <nav className="z-1000 fixed top-0 w-full shadow-lg bg-secondary/35 ">
       <AnimatePresence>
         {open && (
           <motion.ul
-            className="flex flex-col w-62.5 fixed bg-secondary top-0 right-0 h-full justify-start"
+            className="flex flex-col w-62.5 fixed bg-secondary/35 top-0 right-0 h-full justify-start backdrop-blur-sm z-1"
             initial={{ x: 250, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: 250, opacity: 0 }}
@@ -65,29 +65,38 @@ export default function NavBar({ children }) {
         )}
       </AnimatePresence>
 
-      <ul className="flex flex-row h-16 justify-end gap-5 items-center mx-4">
-        <li className="mr-auto px-3">
-          <button className="w-full h-15" onClick={ScrollToTop}>
+      <ul className="flex flex-row h-16 justify-end items-center mx-4 backdrop-blur-sm">
+        <li className="mr-auto px-3 ">
+          <button className="w-full h-15 cursor-pointer" onClick={ScrollToTop}>
             Paulius Savičiūnas
           </button>
         </li>
-        <li className="hidden lg:block hover:bg-primary px-3 h-full">
-          <MotionLink className="w-full h-15" onClick={ScrollToTop}>
+        <li className="hidden lg:block h-full">
+          <MotionLink
+            className="w-full px-7 h-full cursor-pointer"
+            onClick={ScrollToTop}
+          >
             {menu.aboutMe}
           </MotionLink>
         </li>
-        <li className="hidden lg:block hover:bg-primary px-3 h-full">
-          <MotionLink className="w-full h-15" onClick={ScrollToProjects}>
+        <li className="hidden lg:block h-full">
+          <MotionLink
+            className="w-full px-7 h-full cursor-pointer"
+            onClick={ScrollToProjects}
+          >
             {menu.projects}
           </MotionLink>
         </li>
-        <li className="hidden lg:block hover:bg-primary px-3 h-full">
-          <MotionLink className="w-full h-15" onClick={ScrollToContacts}>
+        <li className="hidden lg:block h-full">
+          <MotionLink
+            className="w-full px-7 h-full cursor-pointer"
+            onClick={ScrollToContacts}
+          >
             {menu.contacts}
           </MotionLink>
         </li>
-        <li className="hidden lg:block">{children}</li>
-        <li className="block lg:hidden">
+        <li className="hidden lg:block ml-2">{children}</li>
+        <li className="block lg:hidden ">
           <button onClick={() => setOpen(true)}>
             <img className="w-8" src={MenuIcon} alt="menu" />
           </button>
@@ -99,7 +108,8 @@ export default function NavBar({ children }) {
 
 const MotionLink = ({ children, ...props }) => (
   <motion.button
-    whileHover={{ backgroundColor: "rgba(12, 10, 9,0.5)" }}
+    className="cursor-pointer"
+    whileHover={{ backgroundColor: "rgba(8, 77, 99,0.2)" }}
     transition={{ duration: 0.2, ease: "easeIn" }}
     {...props}
   >

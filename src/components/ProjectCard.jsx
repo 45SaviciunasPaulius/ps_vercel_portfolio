@@ -30,7 +30,7 @@ export default function ProjectCard({
         <h1 className="text-center text-heading font-bold mt-2 md:text-left">
           {title}
         </h1>
-        <p className="text-neutral-400 text-center md:text-left">{date}</p>
+        <p className="text-subtitle text-center md:text-left">{date}</p>
         <p className="p-4 text-center md:text-left md:px-0">{about}</p>
         <div className="flex flex-wrap [&_img]:w-[15%] [&_img]:object-cover [&_img]:overflow-visible justify-center gap-3 p-3 [&_img]:max-w-11 md:justify-start md:px-0">
           {children}
