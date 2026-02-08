@@ -78,7 +78,7 @@ export default function AboutMe() {
         </ul>
       </motion.div>
 
-      <div className="w-full max-w-300 m-auto my-30">
+      <div className="w-[70%] max-w-300 m-auto my-30">
         <div className="w-full flex flex-col md:flex-row items-center md:items-stretch">
           <h1 className="text-heading md:border-r px-7 md:flex items-center mb-3 md:mb-0 border-b md:border-b-0 w-[70%] m-auto pb-5 md:w-fit md:m-0">
             {otherInfo.type_1}

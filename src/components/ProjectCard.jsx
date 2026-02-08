@@ -12,27 +12,37 @@ export default function ProjectCard({
 }) {
   return (
     <motion.div
-      className="projectCard"
+      className="flex w-full flex-col my-3 bg-[#1c191740] rounded-xl gap-4 md:flex-row lg:w-[70%] max-w-300 md:h-80 shadow-lg cursor-pointer overflow-hidden"
       {...rest}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.2, ease: "easeIn" }}
       whileHover={{ scale: 1.05 }}
     >
-      <img className="firstPhoto" src={firstPhoto} alt="project photo" />
-      <div className="ProjectInfo">
-        <h1>{title}</h1>
-        <p className="date">{date}</p>
-        <p className="aboutProject">{about}</p>
-        <div className="projectStack">{children}</div>
+      <div className="md:aspect-square md:max-w-70">
+        <img
+          className="md:w-full md:h-full md:object-cover"
+          src={firstPhoto}
+          alt="project photo"
+        />
+      </div>
+      <div className="w-full grid grid-col-1 grid-row-5 py-3">
+        <h1 className="text-center text-heading font-bold mt-2 md:text-left">
+          {title}
+        </h1>
+        <p className="text-neutral-400 text-center md:text-left">{date}</p>
+        <p className="p-4 text-center md:text-left md:px-0">{about}</p>
+        <div className="flex flex-wrap [&_img]:w-[15%] [&_img]:object-cover [&_img]:overflow-visible justify-center gap-3 p-3 [&_img]:max-w-11 md:justify-start md:px-0">
+          {children}
+        </div>
         <a
           target="_blank"
-          className="repoLink"
+          className="flex items-center self-end z-999 justify-self-end mx-3"
           href={repoLink}
           onClick={(e) => e.stopPropagation()}
         >
           GitHub Repo:
-          <img src={githubLogo} alt="GitHub" />
+          <img className="max-w-15" src={githubLogo} alt="GitHub" />
         </a>
       </div>
     </motion.div>

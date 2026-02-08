@@ -71,9 +71,11 @@ export default function Projects() {
   const [openThird, setOpenThird] = useState(false);
 
   return (
-    <div id="Projects">
-      <h1 className="heading">{projects.heading}</h1>
-      <div className="projectsContainer">
+    <div className="flex flex-col items-center my-30">
+      <h1 className="mx-5 text-heading font-bold text-xl mb-7">
+        {projects.heading}
+      </h1>
+      <div className="w-full flex flex-col items-center">
         <ProjectCard
           onClick={() => setOpenFirst(true)}
           firstPhoto={techmart_1}
