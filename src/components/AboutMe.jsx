@@ -14,16 +14,21 @@ import phpLogo from "../assets/stack/php.png";
 import reactLogo from "../assets/stack/react.png";
 import xamppLogo from "../assets/stack/xampp.png";
 import bootstrapLogo from "../assets/stack/bootstrap.png";
+import laravelLogo from "../assets/stack/laravel.png";
+import tailwindLogo from "../assets/stack/tailwind.png";
+import inertiaLogo from "../assets/stack/inertia.png";
 
 const stack = [
+  ["Laravel", laravelLogo],
+  ["React", reactLogo],
+  ["Tailwind CSS", tailwindLogo],
+  ["Inertia.js", inertiaLogo],
   ["HTML", htmlLogo],
   ["CSS", cssLogo],
   ["JavaScript", jsLogo],
   ["MySQL", mySqlLogo],
   ["PHP", phpLogo],
-  ["React", reactLogo],
   ["XAMPP", xamppLogo],
-  ["Bootstrap", bootstrapLogo],
 ];
 
 import selfImprovement from "../assets/icons/self_improvement.png";

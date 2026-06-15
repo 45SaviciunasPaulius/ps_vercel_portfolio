@@ -36,9 +36,12 @@
                 "about": "Dokubox - mobilioji dokumentų valdymo aplikacija, skirta pirkimo dokumentų ir kvitų saugojimui, organizavimui bei patogiam valdymui vienoje vietoje."
             },
             "project_4": {
-                "title": "Netrukus...",
+                "title": "CarmaPool",
+                "comment": "(Bakalauro darbas)",
+                "grade": "Įvertinimas: 10/10",
                 "date": "2026.02 - 2026.06",
-                "about": "..."
+                "about": "Lietuvos naudotojams sukurta internetinė bendrų kelionių automobilių planavimo informacinė sistema.",
+                "button": "Daugiau..."
             }
         },
         "otherInfo": {
@@ -122,9 +125,12 @@
                 "about": "Dokubox is a mobile document management application designed for storing, organizing, and conveniently managing purchase documents and receipts in one place."
             },
             "project_4": {
-                "title": "Coming Soon...",
+                "title": "CarmaPool",
+                "comment": "(Bacheloir's thesis)",
+                "grade": "Grade: 10/10",
                 "date": "2026.02 - 2026.06",
-                "about": "..."
+                "about": "A carpooling web application built for Lithuanian users. CarmaPool allows drivers to offer rides and passengers to search, book, and review journeys across Lithuania.",
+                "button": "More..."
             }
         },
         "otherInfo": {

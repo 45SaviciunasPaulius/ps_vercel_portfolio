@@ -24,6 +24,14 @@ import reactLogo from "../assets/stack/react.png";
 import xamppLogo from "../assets/stack/xampp.png";
 import appwriteLogo from "../assets/stack/appwrite.png";
 import bootstrapLogo from "../assets/stack/bootstrap.png";
+import laravelLogo from "../assets/stack/laravel.png";
+import tailwindLogo from "../assets/stack/tailwind.png";
+import inertiaLogo from "../assets/stack/inertia.png";
+import cloudflareLogo from "../assets/stack/cloudflare.png";
+import filamentLogo from "../assets/stack/filament.png";
+import leafletLogo from "../assets/stack/leaflet.png";
+import railwayLogo from "../assets/stack/railway.png";
+import resendLogo from "../assets/stack/resend.png";
 
 //Project one
 import techmart_1 from "../assets/projects/Techmart/1.webp";
@@ -77,42 +85,18 @@ export default function Projects() {
       </h1>
       <div className="w-full flex flex-col items-center">
         <ProjectCard
-          onClick={() => setOpenFirst(true)}
-          firstPhoto={techmart_1}
-          title={projects.project_1.title}
-          date={projects.project_1.date}
-          repoLink="https://github.com/45SaviciunasPaulius/Techmart"
-          about={projects.project_1.about}
+          className="lg:scale-110 mb-10 border-2 border-cyan-700 shadow-lg shadow-cyan-900/60 p-3"
+          firstPhoto={Soon_0}
+          title={projects.project_4.title}
+          comment={projects.project_4.comment}
+          grade={projects.project_4.grade}
+          date={projects.project_4.date}
+          about={projects.project_4.about}
         >
-          <img src={htmlLogo} alt="HTML" />
-          <img src={cssLogo} alt="CSS" />
-          <img src={jsLogo} alt="JavaScript" />
-          <img src={phpLogo} alt="PHP" />
-          <img src={mySqlLogo} alt="MySQL" />
-          <img src={xamppLogo} alt="XAMPP" />
+            <button className="bg-[#332f2c40] text-subtitle text-sm p-5 py-1 rounded-lg">
+              {projects.project_4.button}
+            </button>
         </ProjectCard>
-
-        <Lightbox
-          open={openFirst}
-          close={() => setOpenFirst(false)}
-          slides={[
-            { src: techmart_1, title: "Index" },
-            { src: techmart_2, title: "Login / Prisijungti" },
-            { src: techmart_3, title: "Register / Registracija" },
-            { src: techmart_4, title: "Categories / Kategorijos" },
-            { src: techmart_5, title: "Search / Paieška" },
-            { src: techmart_6, title: "Entry / Įrašas" },
-            { src: techmart_7, title: "All entries / visi įrašai" },
-            { src: techmart_8, title: "Entry / Įrašas" },
-            { src: techmart_9, title: "User entries / Vartotojo Įrašai" },
-            {
-              src: techmart_10,
-              title: "Entry registration / Įrašo registracija",
-            },
-          ]}
-          plugins={[Captions, Fullscreen, Slideshow, Thumbnails, Video, Zoom]}
-          styles={{ container: { zIndex: 9999 } }}
-        />
 
         <ProjectCard
           onClick={() => setOpenSecond(true)}
@@ -154,6 +138,44 @@ export default function Projects() {
         />
 
         <ProjectCard
+          onClick={() => setOpenFirst(true)}
+          firstPhoto={techmart_1}
+          title={projects.project_1.title}
+          date={projects.project_1.date}
+          repoLink="https://github.com/45SaviciunasPaulius/Techmart"
+          about={projects.project_1.about}
+        >
+          <img src={htmlLogo} alt="HTML" />
+          <img src={cssLogo} alt="CSS" />
+          <img src={jsLogo} alt="JavaScript" />
+          <img src={phpLogo} alt="PHP" />
+          <img src={mySqlLogo} alt="MySQL" />
+          <img src={xamppLogo} alt="XAMPP" />
+        </ProjectCard>
+
+        <Lightbox
+          open={openFirst}
+          close={() => setOpenFirst(false)}
+          slides={[
+            { src: techmart_1, title: "Index" },
+            { src: techmart_2, title: "Login / Prisijungti" },
+            { src: techmart_3, title: "Register / Registracija" },
+            { src: techmart_4, title: "Categories / Kategorijos" },
+            { src: techmart_5, title: "Search / Paieška" },
+            { src: techmart_6, title: "Entry / Įrašas" },
+            { src: techmart_7, title: "All entries / visi įrašai" },
+            { src: techmart_8, title: "Entry / Įrašas" },
+            { src: techmart_9, title: "User entries / Vartotojo Įrašai" },
+            {
+              src: techmart_10,
+              title: "Entry registration / Įrašo registracija",
+            },
+          ]}
+          plugins={[Captions, Fullscreen, Slideshow, Thumbnails, Video, Zoom]}
+          styles={{ container: { zIndex: 9999 } }}
+        />
+
+        <ProjectCard
           onClick={() => setOpenThird(true)}
           firstPhoto={dokubox_0}
           title={projects.project_3.title}
@@ -189,13 +211,6 @@ export default function Projects() {
           plugins={[Captions, Fullscreen, Slideshow, Thumbnails, Video, Zoom]}
           styles={{ container: { zIndex: 9999 } }}
         />
-
-        <ProjectCard
-          firstPhoto={Soon_0}
-          title={projects.project_4.title}
-          date={projects.project_4.date}
-          about={projects.project_4.about}
-        ></ProjectCard>
       </div>
     </div>
   );
