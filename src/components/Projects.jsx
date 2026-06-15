@@ -24,7 +24,7 @@ import reactLogo from "../assets/stack/react.png";
 import xamppLogo from "../assets/stack/xampp.png";
 import appwriteLogo from "../assets/stack/appwrite.png";
 import bootstrapLogo from "../assets/stack/bootstrap.png";
-import laravelLogo from "../assets/stack/laravel.png";
+// import laravelLogo from "../assets/stack/laravel.png";
 import tailwindLogo from "../assets/stack/tailwind.png";
 import inertiaLogo from "../assets/stack/inertia.png";
 import cloudflareLogo from "../assets/stack/cloudflare.png";
@@ -93,9 +93,9 @@ export default function Projects() {
           date={projects.project_4.date}
           about={projects.project_4.about}
         >
-            <button className="bg-[#332f2c40] text-subtitle text-sm p-5 py-1 rounded-lg">
-              {projects.project_4.button}
-            </button>
+          <button className="bg-[#332f2c40] text-subtitle text-sm p-5 py-1 rounded-lg">
+            {projects.project_4.button}
+          </button>
         </ProjectCard>
 
         <ProjectCard
