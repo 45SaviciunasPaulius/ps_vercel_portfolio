@@ -5,7 +5,13 @@ import HeroSection from "./components/HeroSection";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Contacts from "./components/Contacts";
-import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Outlet,
+  useLocation,
+} from "react-router-dom";
 
 import CarmaPool from "./Pages/CarmaPool";
 
@@ -46,6 +52,16 @@ function Layout() {
 }
 
 function ShowHome() {
+  const location = useLocation();
+
+  useEffect(() => {
+    console.log(location.state);
+    if (location.state?.scrollTo) {
+      document
+        .getElementById(location.state.scrollTo)
+        .scrollIntoView({ behavior: "smooth" });
+    }
+  }, [location.state]);
   return (
     <>
       <HeroSection />

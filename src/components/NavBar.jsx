@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import localization from "../localization.json";
 import { langContext } from "../App";
 import { AnimatePresence, motion } from "motion/react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 import CloseIcon from "../assets/icons/close.png";
 import MenuIcon from "../assets/icons/menu.png";
@@ -13,16 +13,35 @@ export default function NavBar({ children }) {
 
   const [open, setOpen] = useState(false);
 
+  const navigate = useNavigate();
+  const location = useLocation();
+
   function ScrollToContacts() {
-    document.getElementById("Contacts").scrollIntoView({ behavior: "smooth" });
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: "Contacts" } });
+    } else {
+      document
+        .getElementById("Contacts")
+        .scrollIntoView({ behavior: "smooth" });
+    }
   }
 
   function ScrollToProjects() {
-    document.getElementById("Projects").scrollIntoView({ behavior: "smooth" });
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: "Projects" } });
+    } else {
+      document
+        .getElementById("Projects")
+        .scrollIntoView({ behavior: "smooth" });
+    }
   }
 
   function ScrollToTop() {
-    document.getElementById("Top").scrollIntoView({ behavior: "smooth" });
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: "Top" } });
+    } else {
+      document.getElementById("Top").scrollIntoView({ behavior: "smooth" });
+    }
   }
 
   return (
@@ -47,31 +66,28 @@ export default function NavBar({ children }) {
               </button>
             </li>
             <li className="w-full h-15">
-              <Link
-                to="/"
+              <button
                 className="w-full h-15 flex justify-center items-center"
                 onClick={ScrollToTop}
               >
                 {menu.aboutMe}
-              </Link>
+              </button>
             </li>
             <li className="w-full h-15">
-              <Link
-                to="/"
+              <button
                 className="w-full h-15 flex justify-center items-center"
                 onClick={ScrollToProjects}
               >
                 {menu.projects}
-              </Link>
+              </button>
             </li>
             <li className="w-full h-15">
-              <Link
-                to="/"
+              <button
                 className="w-full h-15 flex justify-center items-center"
                 onClick={ScrollToContacts}
               >
                 {menu.contacts}
-              </Link>
+              </button>
             </li>
             <li className="mt-4 self-center">{children}</li>
           </motion.ul>
@@ -89,31 +105,28 @@ export default function NavBar({ children }) {
           </Link>
         </li>
         <li className="hidden lg:block h-full">
-          <Link
-            to="/"
+          <button
             className="w-full px-7 h-full cursor-pointer flex items-center"
             onClick={ScrollToTop}
           >
             {menu.aboutMe}
-          </Link>
+          </button>
         </li>
         <li className="hidden lg:block h-full">
-          <Link
-            to="/"
+          <button
             className="w-full px-7 h-full cursor-pointer flex items-center"
             onClick={ScrollToProjects}
           >
             {menu.projects}
-          </Link>
+          </button>
         </li>
         <li className="hidden lg:block h-full">
-          <Link
-            to="/"
+          <button
             className="w-full px-7 h-full cursor-pointer flex items-center"
             onClick={ScrollToContacts}
           >
             {menu.contacts}
-          </Link>
+          </button>
         </li>
         <li className="hidden lg:block mx-2">{children}</li>
         <li className="block lg:hidden ">
