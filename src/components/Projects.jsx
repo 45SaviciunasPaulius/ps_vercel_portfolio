@@ -68,6 +68,7 @@ import dokubox_6 from "../assets/projects/Dokubox/6.webp";
 // Project four
 
 import Soon_0 from "../assets/projects/Soon/0.webp";
+import { Link } from "react-router-dom";
 
 export default function Projects() {
   const language = useContext(langContext);
@@ -84,19 +85,24 @@ export default function Projects() {
         {projects.heading}
       </h1>
       <div className="w-full flex flex-col items-center">
-        <ProjectCard
-          className="lg:scale-110 mb-10 border-2 border-cyan-700 shadow-lg shadow-cyan-900/60 p-3"
-          firstPhoto={Soon_0}
-          title={projects.project_4.title}
-          comment={projects.project_4.comment}
-          grade={projects.project_4.grade}
-          date={projects.project_4.date}
-          about={projects.project_4.about}
+        <Link
+          className="w-full flex h-full justify-center items-center"
+          to="/CarmaPool"
         >
-          <button className="bg-[#332f2c40] text-subtitle text-sm p-5 py-1 rounded-lg">
-            {projects.project_4.button}
-          </button>
-        </ProjectCard>
+          <ProjectCard
+            className="lg:scale-105 mb-10 shadow-lg shadow-cyan-900 p-3"
+            firstPhoto={Soon_0}
+            title={projects.project_4.title}
+            comment={projects.project_4.comment}
+            grade={projects.project_4.grade}
+            date={projects.project_4.date}
+            about={projects.project_4.about}
+          >
+            <button className="bg-[#332f2c40] text-subtitle text-sm p-5 py-1 rounded-lg">
+              {projects.project_4.button}
+            </button>
+          </ProjectCard>
+        </Link>
 
         <ProjectCard
           onClick={() => setOpenSecond(true)}

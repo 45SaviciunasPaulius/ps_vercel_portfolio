@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import localization from "../localization.json";
 import { langContext } from "../App";
 import { AnimatePresence, motion } from "motion/react";
+import { Link } from "react-router-dom";
 
 import CloseIcon from "../assets/icons/close.png";
 import MenuIcon from "../assets/icons/menu.png";
@@ -46,19 +47,31 @@ export default function NavBar({ children }) {
               </button>
             </li>
             <li className="w-full h-15">
-              <MotionLink className="w-full h-15" onClick={ScrollToTop}>
+              <Link
+                to="/"
+                className="w-full h-15 flex justify-center items-center"
+                onClick={ScrollToTop}
+              >
                 {menu.aboutMe}
-              </MotionLink>
+              </Link>
             </li>
             <li className="w-full h-15">
-              <MotionLink className="w-full h-15" onClick={ScrollToProjects}>
+              <Link
+                to="/"
+                className="w-full h-15 flex justify-center items-center"
+                onClick={ScrollToProjects}
+              >
                 {menu.projects}
-              </MotionLink>
+              </Link>
             </li>
             <li className="w-full h-15">
-              <MotionLink className="w-full h-15" onClick={ScrollToContacts}>
+              <Link
+                to="/"
+                className="w-full h-15 flex justify-center items-center"
+                onClick={ScrollToContacts}
+              >
                 {menu.contacts}
-              </MotionLink>
+              </Link>
             </li>
             <li className="mt-4 self-center">{children}</li>
           </motion.ul>
@@ -67,33 +80,40 @@ export default function NavBar({ children }) {
 
       <ul className="flex flex-row h-16 justify-end items-center backdrop-blur-sm">
         <li className="mr-auto px-3 ">
-          <button className="w-full h-15 cursor-pointer" onClick={ScrollToTop}>
+          <Link
+            to="/"
+            className="w-full h-15 cursor-pointer"
+            onClick={ScrollToTop}
+          >
             Paulius Savičiūnas
-          </button>
+          </Link>
         </li>
         <li className="hidden lg:block h-full">
-          <MotionLink
-            className="w-full px-7 h-full cursor-pointer"
+          <Link
+            to="/"
+            className="w-full px-7 h-full cursor-pointer flex items-center"
             onClick={ScrollToTop}
           >
             {menu.aboutMe}
-          </MotionLink>
+          </Link>
         </li>
         <li className="hidden lg:block h-full">
-          <MotionLink
-            className="w-full px-7 h-full cursor-pointer"
+          <Link
+            to="/"
+            className="w-full px-7 h-full cursor-pointer flex items-center"
             onClick={ScrollToProjects}
           >
             {menu.projects}
-          </MotionLink>
+          </Link>
         </li>
         <li className="hidden lg:block h-full">
-          <MotionLink
-            className="w-full px-7 h-full cursor-pointer"
+          <Link
+            to="/"
+            className="w-full px-7 h-full cursor-pointer flex items-center"
             onClick={ScrollToContacts}
           >
             {menu.contacts}
-          </MotionLink>
+          </Link>
         </li>
         <li className="hidden lg:block mx-2">{children}</li>
         <li className="block lg:hidden ">
