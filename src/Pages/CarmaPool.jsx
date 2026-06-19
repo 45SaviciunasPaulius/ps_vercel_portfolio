@@ -123,6 +123,12 @@ export default function CarmaPool() {
       <a href="https://carmapool.saviciunas.lt" target="_blank">
         {projects.button}
       </a>
+      <a
+        href="https://github.com/45SaviciunasPaulius/CarmaPool"
+        target="_blank"
+      >
+        Github
+      </a>
 
       <div>
         {" "}
