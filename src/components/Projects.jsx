@@ -24,7 +24,7 @@ import reactLogo from "../assets/stack/react.png";
 import xamppLogo from "../assets/stack/xampp.png";
 import appwriteLogo from "../assets/stack/appwrite.png";
 import bootstrapLogo from "../assets/stack/bootstrap.png";
-// import laravelLogo from "../assets/stack/laravel.png";
+import laravelLogo from "../assets/stack/laravel.png";
 import tailwindLogo from "../assets/stack/tailwind.png";
 import inertiaLogo from "../assets/stack/inertia.png";
 import cloudflareLogo from "../assets/stack/cloudflare.png";
@@ -67,7 +67,7 @@ import dokubox_6 from "../assets/projects/Dokubox/6.webp";
 
 // Project four
 
-import Soon_0 from "../assets/projects/Soon/0.webp";
+import Soon_0 from "../assets/projects/Carmapool/0.webp";
 import { Link } from "react-router-dom";
 
 export default function Projects() {
