@@ -44,7 +44,8 @@
                 "button": "Daugiau..."
             },
             "project_4_detailed":{
-                "title": "Bendrų kelionių automobilių planavimo informacinė sistema „CarmaPool“",
+                "intro": "Bendrų kelionių automobilių planavimo informacinė sistema",
+                "title": "„CarmaPool“",
                 "about": "Lietuvos naudotojams sukurta internetinė bendrų kelionių automobilių planavimo informacinė sistema. „CarmaPool“ leidžia vairuotojams siūlyti keliones, o keleiviams jų ieškoti, rezervuoti vietas ir palikti atsiliepimus.",
                 "grade": "Įvertinimas: 10/10",
                 "date": "2026.02 - 2026.06",

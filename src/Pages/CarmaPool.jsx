@@ -28,6 +28,8 @@ import resendLogo from "../assets/stack/resend.png";
 import gitLogo from "../assets/stack/git.png";
 import githubLogo from "../assets/stack/github.png";
 
+import checkmark from "../assets/icons/check.png";
+
 // Images
 
 import image_0 from "../assets/projects/Carmapool/0.webp";
@@ -86,25 +88,59 @@ export default function CarmaPool() {
     { src: image_16 },
   ];
   return (
-    <div className="p-20">
+    <div className="p-20 m-auto max-w-300">
       <div>
-        <h1>{projects.title}</h1>
-        <div>{projects.date}</div>
-        <div>{projects.grade}</div>
+        <h1>{projects.intro}</h1>
+        <h2 className="font-bold text-6xl pb-10 pt-2 border-b-3 max-w-fit border-cyan-400">
+          {projects.title}
+        </h2>
+        <div className="flex items-center gap-2 pt-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#FFFFFF"
+          >
+            <path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-188.5-11.5Q280-423 280-440t11.5-28.5Q303-480 320-480t28.5 11.5Q360-457 360-440t-11.5 28.5Q337-400 320-400t-28.5-11.5ZM640-400q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-188.5-11.5Q280-263 280-280t11.5-28.5Q303-320 320-320t28.5 11.5Q360-297 360-280t-11.5 28.5Q337-240 320-240t-28.5-11.5ZM640-240q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z" />
+          </svg>
+          {projects.date}
+        </div>
+        <div className="flex items-center gap-2 pt-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#FFFFFF"
+          >
+            <path d="M657-121 544-234l56-56 57 57 127-127 56 56-183 183Zm-537 1v-80h360v80H120Zm0-160v-80h360v80H120Zm0-160v-80h720v80H120Zm0-160v-80h720v80H120Zm0-160v-80h720v80H120Z" />
+          </svg>
+          {projects.grade}
+        </div>
       </div>
 
-      <div>
-        <div>{projects.about}</div>
-        <ol className="list-decimal">
+      <div className="mt-10 p-10 bg-slate-700/40 rounded-xl border-l-4 border-cyan-400">
+        <div className="mb-10 text-justify text-slate-400 ">
+          {projects.about}
+        </div>
+        <ol
+          className="list-decimal"
+          style={{ listStyleImage: `url(${checkmark})` }}
+        >
           {Object.values(projects.functions).map((element, i) => (
-            <li key={i}>{element}</li>
+            <li key={i} className="py-2 px-1">
+              {element}
+            </li>
           ))}
         </ol>
       </div>
 
-      <div>
-        <h2>{projects.tech}</h2>
-        <div>
+      <div className="py-10">
+        <h2 className="text-cyan-400 text-xl py-5 border-b-2 w-fit mb-5">
+          {projects.tech}
+        </h2>
+        <div className="flex flex-row flex-wrap *:object-cover gap-5 py-10 *:m-auto bg-slate-800/10 rounded-xl p-10">
           <img src={laravelLogo} alt="Laravel" />
           <img src={reactLogo} alt="React" />
           <img src={inertiaLogo} alt="Inertia.js" />
