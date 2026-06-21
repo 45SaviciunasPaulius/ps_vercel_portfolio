@@ -1,197 +1,215 @@
 {
-    "LT": {
-        "menu": {
-            "home": "Pradžia",
-            "aboutMe": "Apie mane",
-            "projects": "Projektai",
-            "cv": "CV",
-            "contacts": "Kontaktai"
-        },
-        "heroSection": {
-            "name": "Sveiki! Aš esu Paulius Savičiūnas",
-            "info": "Paskutinio kurso IT studentas | Vilnius, Lietuva",
-            "bio": "Kuriu asmeninius ir akademinius Full-Stack projektus. Bei siekiu tikros praktikos interneto svetainių kurime."
-        },
-        "aboutMe": {
-            "heading": "Technologijų stack'as",
-            "info_1": "Pasižymių stipriu noru tobulėti ir mokytis",
-            "info_2": "Atsakingas požiūris į paskirtą darbą",
-            "info_3": "Gebėjimas savarankiškai išspręsti iškilusias problemas"
-        },
-        "projects": {
-            "heading": "Projektai",
-            "project_1": {
-                "title": "TechMart",
-                "date": "2024.10 - 2025.01",
-                "about": "Kompiuterių komponentų skelbimų tinklapis. Ši informacinė sistema leidžia vartotojams talpinti parduodamų komponentų skelbimus."
-            },
-            "project_2": {
-                "title": "Renginus",
-                "date": "2025.01 - 2025.05",
-                "about": " „Renginus“ – tai platforma, kuri leidžia įmonėms organizuoti ir valdyti įvairius įmonės vidaus renginius."
-            },
-            "project_3": {
-                "title": "Dokubox",
-                "date": "2025.10 - 2026.01",
-                "about": "Dokubox - mobilioji dokumentų valdymo aplikacija, skirta pirkimo dokumentų ir kvitų saugojimui, organizavimui bei patogiam valdymui vienoje vietoje."
-            },
-            "project_4": {
-                "title": "CarmaPool",
-                "comment": "(Bakalauro darbas)",
-                "grade": "Įvertinimas: 10/10",
-                "date": "2026.02 - 2026.06",
-                "about": "Lietuvos naudotojams sukurta internetinė bendrų kelionių automobilių planavimo informacinė sistema.",
-                "button": "Daugiau..."
-            },
-            "project_4_detailed":{
-                "intro": "Bendrų kelionių automobilių planavimo informacinė sistema",
-                "title": "„CarmaPool“",
-                "about": "Lietuvos naudotojams sukurta internetinė bendrų kelionių automobilių planavimo informacinė sistema. „CarmaPool“ leidžia vairuotojams siūlyti keliones, o keleiviams jų ieškoti, rezervuoti vietas ir palikti atsiliepimus.",
-                "grade": "Įvertinimas: 10/10",
-                "date": "2026.02 - 2026.06",
-                "functions": {
-                    "func_1": "Registracija ir autentifikacija. Sistema užtikrina naudotojo registraciją pateikiant asmens duomenis (vardą, pavardę, el. pašto adresą ir slaptažodį) ir prisijungimą.",
-                    "func_2": "Naudotojo profilio valdymas. Naudotojas turi galimybę peržiūrėti ir redaguoti savo profilio duomenis, pridėti kontaktinę informaciją ir profilio nuotrauką, matyti pateiktas keliones, rezervacijas ir gautus atsiliepimus.",
-                    "func_3": "Kelionės skelbimų valdymas. Sistema leidžia kurti kelionių skelbimus, nurodant maršruto duomenis, išvykimo laiką, laisvų vietų skaičių ir kainą, taip pat leidžia skelbimus redaguoti ir šalinti.",
-                    "func_4": "Kelionių paieška ir peržiūra. Paieška pagal maršrutą ir datą, su galimybe peržiūrėti išsamią kelionės ir vairuotojo profilio informaciją.",
-                    "func_5": "Rezervacijos ir užklausų valdymas. Keleiviai gali teikti dalyvavimo užklausas, o vairuotojai – jas peržiūrėti, patvirtinti ar atmesti.",
-                    "func_6": "Atsiliepimai ir įvertinimai. Sistema leidžia naudotojams teikti atsiliepimus ir įvertinimus apie kitus naudotojus.",
-                    "func_7": "Administracinė aplinka. Valdymo sąsaja, leidžianti administruoti naudotojų, kelionių, atsiliepimų ir registracijų duomenis bei stebėti sistemos veiklos rodiklius."
-                },
-                "tech": "Technologijų stack'as",
-                "button": "Peržiūrėti gyvai"
-            }
-        },
-        "otherInfo": {
-            "type_1": "Išsilavinimas",
-            "type_2": "Patirtis",
-            "Education": {
-                "HighSchool": {
-                    "name": "Kuršėnų Lauryno Ivinskio gimnazija",
-                    "year": "2017.09 - 2021.07",
-                    "degree": "Vidurinis",
-                    "desc": ""
-                },
-                "College": {
-                    "name": "Vilniaus Verslo Kolegija",
-                    "year": "2023.09 - 2026.07",
-                    "degree": "Programavimas ir IT | Aukštasis",
-                    "desc": ""
-                }
-            },
-            "Exp": {
-                "Job1": {
-                    "name": "Lietuvos kariuomenė",
-                    "year": "2022.04-2022.12",
-                    "degree": "Privalomoji pradinė karo tarnyba"
-                },
-                "Job2": {
-                    "name": "UAB Bitė",
-                    "year": "2023.01-2023.08",
-                    "degree": "Skambučių centro konsultantas"
-                },
-                "Job3": {
-                    "name": "UAB Enzas",
-                    "year": "2024.02 - Dabar",
-                    "degree": "Tinklapių Administratorius / Pardavimų vadybininkas"
-                }
-            }
-        },
-        "Contacts": {
-            "Heading": "Susisiekime!",
-            "Email_info": "El. paštas:",
-            "Email": "psaviciunas@gmail.com",
-            "Phone_info": "Tel.:",
-            "Phone": ""
-        }
+  "LT": {
+    "menu": {
+      "home": "Pradžia",
+      "aboutMe": "Apie mane",
+      "projects": "Projektai",
+      "cv": "CV",
+      "contacts": "Kontaktai"
     },
-    "EN": {
-        "menu": {
-            "home": "Home",
-            "aboutMe": "About me",
-            "projects": "Projects",
-            "cv": "CV",
-            "contacts": "Contacts"
+    "heroSection": {
+      "name": "Sveiki! Aš esu Paulius Savičiūnas",
+      "info": "Paskutinio kurso IT studentas | Vilnius, Lietuva",
+      "bio": "Kuriu asmeninius ir akademinius Full-Stack projektus. Bei siekiu tikros praktikos interneto svetainių kurime."
+    },
+    "aboutMe": {
+      "heading": "Technologijų stack'as",
+      "info_1": "Pasižymių stipriu noru tobulėti ir mokytis",
+      "info_2": "Atsakingas požiūris į paskirtą darbą",
+      "info_3": "Gebėjimas savarankiškai išspręsti iškilusias problemas"
+    },
+    "projects": {
+      "heading": "Projektai",
+      "project_1": {
+        "title": "TechMart",
+        "date": "2024.10 - 2025.01",
+        "about": "Kompiuterių komponentų skelbimų tinklapis. Ši informacinė sistema leidžia vartotojams talpinti parduodamų komponentų skelbimus."
+      },
+      "project_2": {
+        "title": "Renginus",
+        "date": "2025.01 - 2025.05",
+        "about": " „Renginus“ – tai platforma, kuri leidžia įmonėms organizuoti ir valdyti įvairius įmonės vidaus renginius."
+      },
+      "project_3": {
+        "title": "Dokubox",
+        "date": "2025.10 - 2026.01",
+        "about": "Dokubox - mobilioji dokumentų valdymo aplikacija, skirta pirkimo dokumentų ir kvitų saugojimui, organizavimui bei patogiam valdymui vienoje vietoje."
+      },
+      "project_4": {
+        "title": "CarmaPool",
+        "comment": "(Bakalauro darbas)",
+        "grade": "Įvertinimas: 10/10",
+        "date": "2026.02 - 2026.06",
+        "about": "Lietuvos naudotojams sukurta internetinė bendrų kelionių automobilių planavimo informacinė sistema.",
+        "button": "Daugiau..."
+      },
+      "project_4_detailed": {
+        "intro": "Bendrų kelionių automobilių planavimo informacinė sistema",
+        "title": "„CarmaPool“",
+        "about": "Lietuvos naudotojams sukurta internetinė bendrų kelionių automobilių planavimo informacinė sistema. „CarmaPool“ leidžia vairuotojams siūlyti keliones, o keleiviams jų ieškoti, rezervuoti vietas ir palikti atsiliepimus.",
+        "grade": "Įvertinimas: 10/10",
+        "date": "2026.02 - 2026.06",
+        "functions": {
+          "func_1": "Registracija ir autentifikacija. Sistema užtikrina naudotojo registraciją pateikiant asmens duomenis (vardą, pavardę, el. pašto adresą ir slaptažodį) ir prisijungimą.",
+          "func_2": "Naudotojo profilio valdymas. Naudotojas turi galimybę peržiūrėti ir redaguoti savo profilio duomenis, pridėti kontaktinę informaciją ir profilio nuotrauką, matyti pateiktas keliones, rezervacijas ir gautus atsiliepimus.",
+          "func_3": "Kelionės skelbimų valdymas. Sistema leidžia kurti kelionių skelbimus, nurodant maršruto duomenis, išvykimo laiką, laisvų vietų skaičių ir kainą, taip pat leidžia skelbimus redaguoti ir šalinti.",
+          "func_4": "Kelionių paieška ir peržiūra. Paieška pagal maršrutą ir datą, su galimybe peržiūrėti išsamią kelionės ir vairuotojo profilio informaciją.",
+          "func_5": "Rezervacijos ir užklausų valdymas. Keleiviai gali teikti dalyvavimo užklausas, o vairuotojai – jas peržiūrėti, patvirtinti ar atmesti.",
+          "func_6": "Atsiliepimai ir įvertinimai. Sistema leidžia naudotojams teikti atsiliepimus ir įvertinimus apie kitus naudotojus.",
+          "func_7": "Administracinė aplinka. Valdymo sąsaja, leidžianti administruoti naudotojų, kelionių, atsiliepimų ir registracijų duomenis bei stebėti sistemos veiklos rodiklius."
         },
-        "heroSection": {
-            "name": "Hello! I'm Paulius Savičiūnas",
-            "info": "Final year IT student | Vilnius, Lithuania",
-            "bio": "I develop personal and academic Full-Stack projects. And I'm looking for real practice in website development."
+        "tech": "Technologijų stack'as",
+        "button": "Peržiūrėti gyvai"
+      }
+    },
+    "otherInfo": {
+      "type_1": "Išsilavinimas",
+      "type_2": "Patirtis",
+      "Education": {
+        "HighSchool": {
+          "name": "Kuršėnų Lauryno Ivinskio gimnazija",
+          "year": "2017.09 - 2021.07",
+          "degree": "Vidurinis",
+          "desc": ""
         },
-        "aboutMe": {
-            "heading": "Development stack",
-            "info_1": "Strong desire for self-improvement",
-            "info_2": "Responsible approach to assigned tasks",
-            "info_3": "Ability to independently solve emerging problems"
-        },
-        "projects": {
-            "heading": "Projects",
-
-            "project_1": {
-                "title": "TechMart",
-                "date": "2024.10 - 2025.01",
-                "about": "A website for computer components listings. This information system allows users to post advertisements for components they want to sell."
-            },
-            "project_2": {
-                "title": "Renginus",
-                "date": "2025.01 - 2025.05",
-                "about": "“Renginus” is a platform that allows companies to organize and manage various internal corporate events."
-            },
-            "project_3": {
-                "title": "Dokubox",
-                "date": "2025.10 - 2026.01",
-                "about": "Dokubox is a mobile document management application designed for storing, organizing, and conveniently managing purchase documents and receipts in one place."
-            },
-            "project_4": {
-                "title": "CarmaPool",
-                "comment": "(Bacheloir's thesis)",
-                "grade": "Grade: 10/10",
-                "date": "2026.02 - 2026.06",
-                "about": "A carpooling web application built for Lithuanian users. CarmaPool allows drivers to offer rides and passengers to search, book, and review journeys across Lithuania.",
-                "button": "More..."
-            }
-        },
-        "otherInfo": {
-            "type_1": "Education",
-            "type_2": "Experience",
-            "Education": {
-                "HighSchool": {
-                    "name": "Kuršėnai Laurynas Ivinskis Gymnasium",
-                    "year": "2017.09 - 2021.07",
-                    "degree": "Secondary",
-                    "desc": ""
-                },
-                "College": {
-                    "name": "Vilnius Business College",
-                    "year": "2023.09 - 2026.07",
-                    "degree": "Programming and IT | Higher Education",
-                    "desc": ""
-                }
-            },
-            "Exp": {
-                "Job1": {
-                    "name": "Lithuanian Armed Forces",
-                    "year": "2022.04 - 2022.12",
-                    "degree": "Mandatory initial military service"
-                },
-                "Job2": {
-                    "name": "UAB Bitė",
-                    "year": "2023.01 - 2023.08",
-                    "degree": "Call center consultant"
-                },
-                "Job3": {
-                    "name": "UAB Enzas",
-                    "year": "2024 .02 - Present",
-                    "degree": "Website Administrator / Sales Manager"
-                }
-            }
-        },
-        "Contacts": {
-            "Heading": "Let's get in touch!",
-            "Email_info": "Email:",
-            "Email": "psaviciunas@gmail.com",
-            "Phone_info": "Phone:",
-            "Phone": ""
+        "College": {
+          "name": "Vilniaus Verslo Kolegija",
+          "year": "2023.09 - 2026.07",
+          "degree": "Programavimas ir IT | Aukštasis",
+          "desc": ""
         }
+      },
+      "Exp": {
+        "Job1": {
+          "name": "Lietuvos kariuomenė",
+          "year": "2022.04-2022.12",
+          "degree": "Privalomoji pradinė karo tarnyba"
+        },
+        "Job2": {
+          "name": "UAB Bitė",
+          "year": "2023.01-2023.08",
+          "degree": "Skambučių centro konsultantas"
+        },
+        "Job3": {
+          "name": "UAB Enzas",
+          "year": "2024.02 - Dabar",
+          "degree": "Tinklapių Administratorius / Pardavimų vadybininkas"
+        }
+      }
+    },
+    "Contacts": {
+      "Heading": "Susisiekime!",
+      "Email_info": "El. paštas:",
+      "Email": "psaviciunas@gmail.com",
+      "Phone_info": "Tel.:",
+      "Phone": ""
     }
+  },
+  "EN": {
+    "menu": {
+      "home": "Home",
+      "aboutMe": "About me",
+      "projects": "Projects",
+      "cv": "CV",
+      "contacts": "Contacts"
+    },
+    "heroSection": {
+      "name": "Hello! I'm Paulius Savičiūnas",
+      "info": "Final year IT student | Vilnius, Lithuania",
+      "bio": "I develop personal and academic Full-Stack projects. And I'm looking for real practice in website development."
+    },
+    "aboutMe": {
+      "heading": "Development stack",
+      "info_1": "Strong desire for self-improvement",
+      "info_2": "Responsible approach to assigned tasks",
+      "info_3": "Ability to independently solve emerging problems"
+    },
+    "projects": {
+      "heading": "Projects",
+
+      "project_1": {
+        "title": "TechMart",
+        "date": "2024.10 - 2025.01",
+        "about": "A website for computer components listings. This information system allows users to post advertisements for components they want to sell."
+      },
+      "project_2": {
+        "title": "Renginus",
+        "date": "2025.01 - 2025.05",
+        "about": "“Renginus” is a platform that allows companies to organize and manage various internal corporate events."
+      },
+      "project_3": {
+        "title": "Dokubox",
+        "date": "2025.10 - 2026.01",
+        "about": "Dokubox is a mobile document management application designed for storing, organizing, and conveniently managing purchase documents and receipts in one place."
+      },
+      "project_4": {
+        "title": "CarmaPool",
+        "comment": "(Bacheloir's thesis)",
+        "grade": "Grade: 10/10",
+        "date": "2026.02 - 2026.06",
+        "about": "A carpooling web application built for Lithuanian users. CarmaPool allows drivers to offer rides and passengers to search, book, and review journeys across Lithuania.",
+        "button": "More..."
+      },
+      "project_4_detailed": {
+        "intro": "A carpooling information system for planning shared car rides",
+        "title": "CarmaPool",
+        "about": "A web-based carpooling information system built for Lithuanian users. CarmaPool allows drivers to offer rides, while passengers can search for them, book seats, and leave reviews.",
+        "grade": "Grade: 10/10",
+        "date": "2026.02 - 2026.06",
+        "functions": {
+          "func_1": "Registration and authentication. The system handles user registration by collecting personal details (first name, last name, email address, and password) and login.",
+          "func_2": "User profile management. Users can view and edit their profile details, add contact information and a profile photo, and see their posted rides, reservations, and received reviews.",
+          "func_3": "Ride listing management. The system allows users to create ride listings by specifying route details, departure time, number of available seats, and price, as well as edit and delete listings.",
+          "func_4": "Ride search and browsing. Search by route and date, with the ability to view detailed ride and driver profile information.",
+          "func_5": "Reservation and request management. Passengers can submit join requests, and drivers can review, accept, or decline them.",
+          "func_6": "Reviews and ratings. The system allows users to submit reviews and ratings for other users.",
+          "func_7": "Admin panel. A management interface for administering user, ride, review, and registration data, as well as monitoring system activity metrics."
+        },
+        "tech": "Tech stack",
+        "button": "View live"
+      }
+    },
+    "otherInfo": {
+      "type_1": "Education",
+      "type_2": "Experience",
+      "Education": {
+        "HighSchool": {
+          "name": "Kuršėnai Laurynas Ivinskis Gymnasium",
+          "year": "2017.09 - 2021.07",
+          "degree": "Secondary",
+          "desc": ""
+        },
+        "College": {
+          "name": "Vilnius Business College",
+          "year": "2023.09 - 2026.07",
+          "degree": "Programming and IT | Higher Education",
+          "desc": ""
+        }
+      },
+      "Exp": {
+        "Job1": {
+          "name": "Lithuanian Armed Forces",
+          "year": "2022.04 - 2022.12",
+          "degree": "Mandatory initial military service"
+        },
+        "Job2": {
+          "name": "UAB Bitė",
+          "year": "2023.01 - 2023.08",
+          "degree": "Call center consultant"
+        },
+        "Job3": {
+          "name": "UAB Enzas",
+          "year": "2024 .02 - Present",
+          "degree": "Website Administrator / Sales Manager"
+        }
+      }
+    },
+    "Contacts": {
+      "Heading": "Let's get in touch!",
+      "Email_info": "Email:",
+      "Email": "psaviciunas@gmail.com",
+      "Phone_info": "Phone:",
+      "Phone": ""
+    }
+  }
 }
