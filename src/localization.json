@@ -10,7 +10,8 @@
     "heroSection": {
       "name": "Sveiki! Aš esu Paulius Savičiūnas",
       "info": "IT studijų absolventas | Vilnius, Lietuva",
-      "bio": "Kuriu asmeninius ir akademinius Full-Stack projektus. Bei siekiu tikros praktikos interneto svetainių kurime."
+      "bio": "Kuriu asmeninius ir akademinius Full-Stack projektus. Bei siekiu tikros praktikos interneto svetainių kurime.",
+      "grade": "GPA: 9.29"
     },
     "aboutMe": {
       "heading": "Technologijų stack'as",
@@ -116,7 +117,8 @@
     "heroSection": {
       "name": "Hello! I'm Paulius Savičiūnas",
       "info": "IT Graduate | Vilnius, Lithuania",
-      "bio": "I develop personal and academic Full-Stack projects. And I'm looking for real practice in website development."
+      "bio": "I develop personal and academic Full-Stack projects. And I'm looking for real practice in website development.",
+      "grade": "GPA: 9.29"
     },
     "aboutMe": {
       "heading": "Development stack",

@@ -30,6 +30,9 @@ export default function HeroSection() {
         <p className="mx-5 text-subtitle mt-2 lg:max-w-110 text-justify lg:mx-20">
           {heroSection.info}
         </p>
+        <p className="mx-5 text-subtitle mt-2 lg:max-w-110 text-justify lg:mx-20 font-bold">
+          {heroSection.grade}
+        </p>
         <p className="mx-5 mt-8 max-w-110 text-justify lg:text-pretty lg:mx-20 text-md">
           {heroSection.bio}
         </p>

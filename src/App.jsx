@@ -18,6 +18,7 @@ import CarmaPool from "./Pages/CarmaPool";
 // Flags
 import lithuanianFlag from "./assets/flags/LT.webp";
 import unitedKingdomFlag from "./assets/flags/UK.webp";
+import NotFound from "./Pages/NotFound";
 
 export const langContext = createContext();
 
@@ -83,6 +84,7 @@ export default function App() {
         <Route element={<Layout />}>
           <Route index element={<ShowHome />} />
           <Route path="/carmapool" element={<ShowCarmaPool />} />
+          {/* <Route path="*" element={<NotFound />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>
