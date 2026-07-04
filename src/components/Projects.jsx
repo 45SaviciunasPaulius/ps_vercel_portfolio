@@ -87,7 +87,7 @@ export default function Projects() {
       <div className="w-full flex flex-col items-center">
         <Link
           className="w-full flex h-full justify-center items-center"
-          to="/CarmaPool"
+          to="/carmapool"
         >
           <ProjectCard
             className="lg:scale-105 mb-10 shadow-lg shadow-cyan-900 p-3"
